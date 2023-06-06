@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visão Geral</title>
+    <script src="arquivo.js"></script>
+    <link rel="stylesheet" href="styled.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="titulo">Maquina de "Combat"</h1>
+      </div>
+    </header>
+    <section class="adcPaciente">
+      <h2 id="titulo-form">Adicionar novo atendimento</h2>
+      <form id="formAdiciona">
+        <div class="grupo">
+          <label for="nome">Nome:</label>
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="digite o nome do aluno"
+            class="campo"
+          />
+        </div>
+        <div class="grupo">
+          <label for="id">ID:</label>
+          <input
+            id="id"
+            name="peso"
+            type="text"
+            placeholder="digite o ID do aluno"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="freshdesk">FRESHDESK:</label>
+          <input
+            id="freshdesk"
+            name="altura"
+            type="text"
+            placeholder="digite o ID do FRESHDESK ( se houver )"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="app">Aplicativo:</label>
+          <input
+            id="app"
+            type="text"
+            placeholder="digite o aplicativo do aluno"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="difi">Dificuldade</label>
+          <input
+            id="difi"
+            type="text"
+            placeholder="data do atendimento"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="data">Data:</label>
+          <input
+            id="data"
+            type="text"
+            placeholder="data do atendimento"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="diag">Diagnostico</label>
+          <input
+            id="diag"
+            type="text"
+            placeholder="relatar o problema do aluno"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="resposta">Resposta</label>
+          <input
+            id="resposta"
+            type="text"
+            placeholder="relatar o problema do aluno"
+            class="campo campo-medio"
+          />
+        </div>
+
+        <button id="adicionar-atendimento" class="botao bto-principal">
+          Adicionar
+        </button>
+      </form>
+    </section>
+    <main>
+      <section class="container">
+        <h2>Visão Geral</h2>
+        <label for="filtrar-tabela">Filtrar por id:</label>
+        <input
+          type="text"
+          name="filtro"
+          id="filtrar-tabela"
+          placeholder="Digite o nome do paciente"
+        />
+        <table>
+          <thead>
+            <tr class="seila">
+              <th>Nome</th>
+              <th>ID</th>
+              <th>FRESHDESK</th>
+              <th>Aplicativo</th>
+              <th>Dificuldade</th>
+              <th>Data</th>
+              <th>Diagnostico</th>
+              <th>Resposta</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-atendimentos">
+            <tr class="aluno" id="primeiro-paciente">
+              <td class="info-nome">Paulo</td>
+              <td class="info-id">100</td>
+              <td class="info-altura">2.00</td>
+              <td class="info-gordura">10</td>
+              <td class="info-imc">0</td>
+              <td class="info-imc">0</td>
+              <td class="info-imc">0</td>
+              <td class="info-imc">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
